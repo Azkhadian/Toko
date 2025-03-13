@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Peternakan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Toko Peternakan Online</h1>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="images/produk1.jpg" alt="Produk 1">
+                <h2>Susu</h2>
+                <p>Rp 50.000</p>
+                <button onclick="tambahKeKeranjang('Susu', 50000)">Beli</button>
+            </div>
+            <div class="product">
+                <img src="images/produk2.jpg" alt="Produk 2">
+                <h2>Daging Sapi</h2>
+                <p>Rp 75.000</p>
+                <button onclick="tambahKeKeranjang('Daging Sapi', 75000)">Beli</button>
+            </div>
+            <div class="product">
+                <img src="images/produk3.jpg" alt="Produk 3">
+                <h2>Madu</h2>
+                <p>Rp 40.000</p>
+                <button onclick="tambahKeKeranjang('Madu', 40000)">Beli</button>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Keranjang Belanja</h2>
+            <ul id="keranjang"></ul>
+            <p>Total: Rp <span id="total">0</span></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<a href="checkout.html" class="checkout-btn">Lanjut ke Checkout</a>

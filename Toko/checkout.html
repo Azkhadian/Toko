@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Toko Peternakan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Checkout</h1>
+        <a href="index.html" class="back-btn">← Kembali ke Toko</a>
+    </header>
+
+    <main>
+        <section class="cart">
+            <h2>Pesanan Anda</h2>
+            <ul id="checkout-list"></ul>
+            <p>Total: Rp <span id="checkout-total">0</span></p>
+        </section>
+
+        <section class="payment-form">
+            <h2>Informasi Pembayaran</h2>
+            <form id="paymentForm">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" required>
+
+                <label for="address">Alamat Pengiriman:</label>
+                <input type="text" id="address" required>
+
+                <label for="payment-method">Metode Pembayaran:</label>
+                <select id="payment-method" required>
+                    <option value="transfer">Transfer Bank</option>
+                    <option value="cod">Bayar di Tempat (COD)</option>
+                </select>
+
+                <button type="submit">Bayar Sekarang</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
